@@ -1,0 +1,11 @@
+create table traffic(tno int primary key, ttype varchar(20) not null, no int not null, route varchar(50), coment varchar(1000));
+create sequence tseq start with 1 increment by 1;
+create table guide(pcode int primary key, pname varchar(100) not null, ptype varchar(3) not null, paddr varchar(200) not null, ptel varchar(20), pgps varchar(50), pcoment varchar(2000));
+
+create table data(no int primary key, title varchar(50) not null, content varchar(100000) not null, datafile varchar(200), resdate timestamp, visited int);
+create sequence dseq start with 1 increment by 1;
+
+create table member(id int primary key,)
+
+
+

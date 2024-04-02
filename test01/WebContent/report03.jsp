@@ -89,16 +89,20 @@
 <table style="width:1200px;margin:30px auto" class="tb">
 	<thead>
 		<tr>
-			<th>owner</th><th>table_name</th>
-			<th>tablespace_name</th><th>pct_used</th>
+			<th>owner</th>
+			<th>table_name</th>
+			<th>tablespace_name</th>
+			<th>pct_used</th>
 			<th>pct_free</th>
 		</tr>
 	</thead>
 	<tbody>
 	<c:forEach var="data" items="${tList }" varStatus="status">
 		<tr>
-			<td>${data.owner }</td><td>${data.table_name }</td>
-			<td>${data.tablespace_name }</td><td>${data.pct_used }</td>
+			<td>${data.owner }</td>
+			<td>${data.table_name }</td>
+			<td>${data.tablespace_name }</td>
+			<td>${data.pct_used }</td>
 			<td>${data.pct_free }</td>
 		</tr>
 	</c:forEach>	
